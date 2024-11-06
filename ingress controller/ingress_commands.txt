@@ -1,0 +1,8 @@
+apply ingress:
+	>> kubectl apply -f v2_4_7_full_modified.yaml
+
+remove ingress:
+	>> kubectl delete ingress v2_4_7_full_modified
+
+remove all ingress:
+	>> kubectl delete ingress --all

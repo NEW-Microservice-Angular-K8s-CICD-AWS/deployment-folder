@@ -1,0 +1,22 @@
+To create deployments: 
+    >> kubectl apply -f .
+
+To remove deployments:
+    >> kubectl delete -f .
+
+show pods:
+    >> kubectl get pods
+
+show services  :
+    >> kubectl get svc
+	
+
+to redirect to eureka locally:
+	>> kubectl port-forward service/eureka-service 8761:8761
+
+to redirect to locally to entire services:
+	>> kubectl port-forward service/restaurant-service 9091:9091
+	>> kubectl port-forward service/foodcatalogue-service 9092:9092
+	>> kubectl port-forward service//user-service 9093:9093
+	>> kubectl port-forward service/order-service 9094:9094
+	>> kubectl port-forward service/angular-service 80:80
